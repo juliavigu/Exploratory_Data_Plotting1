@@ -24,6 +24,7 @@ lines(df1$datetime,df1$Sub_metering_2, col="red", type="l")
 lines(df1$datetime, df1$Sub_metering_3, col="blue", type="l")
 #plot bottom right
 plot(df1$datetime,df1$Global_reactive_power, type="l", ylab="Global_reactive_power", xlab="datetime")
+legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1, lwd=2.5, col=c("black", "red", "blue"))
 dev.off() #close connection
 
 
